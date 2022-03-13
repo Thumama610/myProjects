@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #222;
+}
+.container{
+    width: 90vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.panel{
+    margin: 0 10px;
+    height: 75vh;
+    width: 10vw;
+    background-size: cover;
+    border-radius: 15px;
+    color:darkturquoise;
+    position: relative;
+    background-position: center;
+    cursor: pointer;
+}
+.active{
+    transition: .8s ease;
+    flex: 1 0 40%;
+}
+.active h3{
+    opacity: 1;
+}
+h3{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    margin: 0 20px;
+    opacity: 0;
+    font-family: 'Fredoka';
+    font-size: 29px;
+    transition: .4s ease;
+}
+@media (max-width:990px) {
+    .panel{
+        width:95vw;
+        height: 100vh;
+        margin: 10px 0;
+    }
+    .container{
+        flex-direction: column;
+    }
+}
