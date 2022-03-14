@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+}
+h1{
+    text-align: center;
+}
+#main{
+    height: 500px;
+    width: 250px;
+    margin: 30px 350px 0;
+    border: 2px solid rgb(12, 41, 211);
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small-container{
+    margin: 40px 10px 0;
+    border: 1px solid rgb(12, 41, 211);
+    height: 100px;
+    width: 50px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.full{
+    background-color: rgb(38, 82, 204);
+}
+.three-quarter-and-a-half-quarter{
+    background: linear-gradient(to bottom, transparent 12.5%, rgb(38, 82, 204) 0%);
+}
+.three-quarter{
+    background: linear-gradient(to bottom, transparent 25%, rgb(38, 82, 204) 0%);
+}
+.half-and-a-half-quarter{
+    background: linear-gradient(to bottom, transparent 37.5%, rgb(38, 82, 204) 0%);
+}
+.half{
+    background: linear-gradient(to bottom, transparent 50%, rgb(38, 82, 204) 50%);
+}
+.quarter-and-a-half{
+    background: linear-gradient(to bottom, transparent 62.5%, rgb(38, 82, 204) 37.5%);
+}
+.quarter{
+    background: linear-gradient(to bottom, transparent 75%, rgb(38, 82, 204) 25%);
+}
+.half-quarter{
+    background: linear-gradient(to bottom, transparent 87.5%, rgb(38, 82, 204) 12.5%);
+}
+.empty{
+    background: transparent;
+}
+h4{
+    text-align: center;
+}
